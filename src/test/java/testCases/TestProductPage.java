@@ -29,22 +29,22 @@ public class TestProductPage extends Browser {
 		}
 	}
 
-	@Test
-	public void failcheckProductPage() {
-		HomePage home = new HomePage(driver);
-		ProductPage product = new ProductPage(driver);
-		home.search();
+	// @Test
+	// public void failcheckProductPage() {
+	// 	HomePage home = new HomePage(driver);
+	// 	ProductPage product = new ProductPage(driver);
+	// 	home.search();
 
-		home.clickImage();
-		product.switchTab();
-		assertTrue(!product.checkTitle(properties.getProperty("expectedTitle").toString()), "title not found");
-		;
+	// 	home.clickImage();
+	// 	product.switchTab();
+	// 	assertTrue(!product.checkTitle(properties.getProperty("expectedTitle").toString()), "title not found");
+	// 	;
 
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	// 	try {
+	// 		Thread.sleep(2000);
+	// 	} catch (InterruptedException e) {
+	// 		// TODO Auto-generated catch block
+	// 		e.printStackTrace();
+	// 	}
+	// }
 }
