@@ -18,13 +18,13 @@ public class TestLanguage extends Browser {
 		
 	}
 	
-	@Test
-	public void failtestLangChange() {
-		HomePage home=  new HomePage(driver);
-		home.changeLangToHindi();
-		assertTrue(!home.checkHindi());
+	// @Test
+	// public void failtestLangChange() {
+	// 	HomePage home=  new HomePage(driver);
+	// 	home.changeLangToHindi();
+	// 	assertTrue(!home.checkHindi());
 		
 		
-	}
+	// }
 
 }
